@@ -263,7 +263,7 @@
       padding: 22px 26px 20px 0;
       border-bottom: 1px solid var(--line);
     }
-    .project + .project { padding-left: 26px; border-left: 1px solid var(--line); }
+    .project:nth-child(even) { padding-left: 26px; border-left: 1px solid var(--line); }
     .project-index { margin-bottom: 26px; color: var(--red); }
     .project h3 {
       margin-bottom: 8px;
@@ -302,7 +302,7 @@
       h2 { font-size: 39px; }
       .project-grid { grid-template-columns: 1fr; }
       .project { min-height: 190px; padding-right: 0; }
-      .project + .project { padding-left: 0; border-left: 0; }
+      .project:nth-child(even) { padding-left: 0; border-left: 0; }
       .footer-inner { align-items: flex-start; flex-direction: column; justify-content: center; padding-block: 17px; }
     }
     @media (prefers-reduced-motion: reduce) {
@@ -358,6 +358,18 @@
           <span class="project-index">02 / Equipment</span>
           <h3>Wireless Epee</h3>
           <p>A wireless epee concept focused on keeping movement natural on the strip.</p>
+          <span class="status">In development</span>
+        </article>
+        <article class="project">
+          <span class="project-index">03 / Equipment</span>
+          <h3>Measurement Plate</h3>
+          <p>Exploring a dedicated plate to make key measurements easier to check and repeat.</p>
+          <span class="status">In development</span>
+        </article>
+        <article class="project">
+          <span class="project-index">04 / Equipment</span>
+          <h3>Custom Epee Grip</h3>
+          <p>A custom-fit grip exploration shaped around the fencer's hand and preferred feel.</p>
           <span class="status">In development</span>
         </article>
       </div>
