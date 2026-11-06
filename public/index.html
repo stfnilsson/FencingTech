@@ -274,6 +274,8 @@
       text-transform: uppercase;
     }
     .project p { max-width: 390px; margin-bottom: 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
+    .project-video { display: block; width: 100%; aspect-ratio: 16 / 9; margin-top: 16px; background: var(--ink); object-fit: contain; }
+    .project-media-link { margin-top: 8px; color: var(--muted); font-size: 10px; }
     .status { margin-top: auto; padding-top: 24px; color: var(--muted); font-size: 9px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
     .status::before { display: inline-block; width: 6px; height: 6px; margin-right: 8px; border-radius: 50%; background: var(--red); content: ""; vertical-align: 1px; }
 
@@ -352,6 +354,10 @@
           <span class="project-index">01 / Training</span>
           <h3>Automatic Trainer</h3>
           <p>Exploring a more repeatable way to practice movement, timing, and distance.</p>
+          <video class="project-video" controls playsinline preload="metadata" aria-label="Automatic Trainer video">
+            <source src="assets/movies/IMG_8235.mov" type="video/quicktime">
+          </video>
+          <a class="project-media-link" href="assets/movies/IMG_8235.mov">Open the video file</a>
           <span class="status">In development</span>
         </article>
         <article class="project">
